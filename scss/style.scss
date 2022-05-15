@@ -1,0 +1,194 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+
+.header {
+    text-align: center;
+    &__title {
+        @extend %title-font;
+    }
+    &__description {
+        padding: 0 64px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 80px 32px 0 32px;
+    }
+    &__inner-img {
+        max-width: 173px;
+        max-height: 76px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.feature {
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    &__block {
+        padding-right: 10px;
+        margin-bottom: 40px;
+    }
+    &__block-title {
+        @extend %title-font;
+    }
+    &__block-description {
+        text-align: left;
+    }
+    &__block-items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 60px 20px;
+        margin-top: 70px;
+    }
+    &__block-img {
+        max-width: 173px;
+        max-height: 76px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__display {
+        margin-left: 74px;
+        border: 1px solid $border;
+    }
+    &__display-img {
+        max-width: 686px;
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__display-desc {
+        margin: 71px 63px;
+    }
+    &__display-desc--title {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.015em;
+        color: $black;
+        margin-bottom: 23px;
+    }
+    &__display-desc--text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.015em;
+    }
+}
+
+.review {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 64px;
+    }
+    &__title {
+        margin-bottom: 39px;
+    }
+    &__img {
+        max-width: 44px;
+        max-height: 44px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+        border-radius: 50%;
+    }
+    &__text {
+        @extend %text-font;
+    }
+}
+
+.details {
+    &__inner {
+        padding-top: 120px;
+        padding-left: 80px;
+        padding-right: 84px;
+    }
+    &__title {
+        text-align: left;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    &__item-img {
+        max-width: 44px;
+        max-height: 44px;
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 16px;
+        border-radius: 50%;
+    }
+    &__text {
+        @extend %text-font;
+        padding-left: 20px;
+    }
+    &__img {
+        max-width: 509px;
+        max-height: 470px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.footer {
+    font-family: 'Roboto';
+    font-weight: 400;
+    &__title {
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: $black;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 47px;
+        margin-bottom: 20px;
+    }
+    &__form-input {
+        padding-top: 24px;
+        padding-left: 28px;
+        padding-bottom: 20px;
+        max-width: 420px;
+        width: 100%;
+        border: 1px solid $black;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        &::placeholder {
+            font-size: 20px;
+            line-height: 28px;
+            color: $border;
+        }
+    }
+    &__form-btn {
+        padding: 21px 24px 22px 24px;
+        margin-top: 8px;
+        background-color: $black;
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        border: none;
+        max-width: 420px;
+        width: 100%;
+        border-radius: 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background-color: #fff;
+            color: $black;
+            border: 1px solid $black;
+        }
+    }
+}
+
+@import 'media';

@@ -1,0 +1,45 @@
+html,
+body {
+	// height: 100%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: $default;
+	overflow-x: hidden;
+	min-width: 300px;
+	background-color: $grey;
+	padding: 80px;
+}
+
+
+.container{
+  max-width: 1680px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 120px 80px;
+  margin-bottom: 40px;
+}
+
+.container-fluid {
+	max-width: 1680px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-bottom: 39px;
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 50px;
+	text-align: center;
+	letter-spacing: -0.015em;
+	text-align: center;
+}
+
+.form {
+	font-family: 'Roboto', sans-serif;
+}

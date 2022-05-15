@@ -1,0 +1,19 @@
+$default: rgba(0, 0, 0, 0.8);
+$grey: #E5E5E5;
+$black: #000000;
+$border: rgba(0, 0, 0, 0.5);
+
+%title-font{
+    font-size: 48px;
+    line-height: 72px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    letter-spacing: -0.015em;
+}
+
+%text-font {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+}
